@@ -9,12 +9,12 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                // Monochrome palette per user request
-                background: "#ffffff", // Pure white
-                foreground: "#000000", // Pure black
-                muted: "#666666", // Gray for secondary text
-                border: "#eaeaea", // Light gray for subtle borders
-                accent: "#000000", // Black for accents
+                // Monochrome Dark Mode palette
+                background: "#111111", // Dark Grey
+                foreground: "#ffffff", // Pure white
+                muted: "#a1a1a1", // Lighter gray for secondary text
+                border: "#333333", // Dark gray for subtle borders
+                accent: "#ffffff", // White for accents
             },
             fontFamily: {
                 sans: [

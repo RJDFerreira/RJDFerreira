@@ -15,7 +15,7 @@ export type Post = {
     content: string;
 };
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): Post[] {
     if (!fs.existsSync(postsDirectory)) {
         return [];
     }
@@ -42,7 +42,7 @@ export function getSortedPostsData() {
     });
 }
 
-export function getPostBySlug(slug: string) {
+export function getPostBySlug(slug: string): Post | null {
     const fullPath = path.join(postsDirectory, `${slug}.mdx`);
     if (!fs.existsSync(fullPath)) {
         return null;
@@ -52,7 +52,7 @@ export function getPostBySlug(slug: string) {
 
     return {
         slug,
-        frontmatter: data,
+        frontmatter: data as Post['frontmatter'],
         content,
     };
 }

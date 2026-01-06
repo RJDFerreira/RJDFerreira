@@ -3,17 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --muted: #666666;
+  --background: #111111;
+  --foreground: #ffffff;
+  --muted: #a1a1a1;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
 }
