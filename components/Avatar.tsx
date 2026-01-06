@@ -4,7 +4,7 @@ const Avatar = () => {
     return (
         <div className="relative w-32 h-32 md:w-64 md:h-64 overflow-hidden rounded-full">
             <Image
-                src="/avatar.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/avatar.png`}
                 alt="Ricardo Ferreira"
                 fill
                 className="object-cover scale-110"
