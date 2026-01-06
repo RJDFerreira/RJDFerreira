@@ -25,6 +25,14 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED 1
 
+# Development image, copy all the files and run next
+FROM base AS dev
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+ENV NEXT_TELEMETRY_DISABLED 1
+CMD ["npm", "run", "dev"]
+
 RUN npm run build
 
 # Production image, copy all the files and run nginx

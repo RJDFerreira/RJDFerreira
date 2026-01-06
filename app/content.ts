@@ -1,30 +1,24 @@
 export const homeContent = {
-    title: "About Ricardo Ferreira",
-    aboutHeading: "About",
-    intro: "I’m a product-driven engineer working at the intersection of hardware, software, and complex systems, with more than a decade of experience in medtech, embedded systems, and product leadership. I’m currently based in Paris, France, and I originally trained as a biomedical and electrical engineer in Portugal.",
-    fullBio: `
-    My early career was deeply technical. I started in embedded systems, power electronics, and real-time software, working on energy-efficiency devices, industrial control, and medical instrumentation. During this time, I was involved in hands-on design across electronics, firmware, mechanics, and testing — experiences that shaped how I think about systems as a whole, not just individual components.
+  title: "About Ricardo Ferreira",
+  aboutHeading: "About",
+  intro: "I’m a product-driven engineer working at the intersection of hardware, software, and complex systems, with more than a decade of experience in medtech products. I’m currently based in Paris, France, and I originally trained as a biomedical and electrical engineer in Portugal, later specializing in mechatronics.",
+  fullBio: `Curiosity has been the main driver of my career. Early on, I was drawn to understanding systems end to end — which led me to explore deeply across electronics, firmware, mechanics, and real-time software. That drive pushed me to seek challenging environments early, including international internships in different countries and, later, a move to France to work on state-of-the-art technologies.
 
-    Over time, my focus naturally shifted from building individual subsystems to owning entire products. At Dreem, I evolved from hardware engineering into a technical product role, contributing to the company’s transition from a device-centric organization to a digital sleep clinic. I worked closely with clinical, regulatory, and executive teams to define new hardware platforms, build industrialization pipelines, and deploy factory-wide testing systems used across thousands of medical devices.
+My early work was hands-on and technical, spanning embedded systems, power electronics, industrial control, and medical instrumentation. Over time, my focus shifted from building individual subsystems to owning entire products. 
+At Dreem, I evolved from hardware engineering into a technical product role, helping scale medical devices from prototypes to thousands of deployed units. 
+More recently at Chipiron, I led engineering and product definition for a next-generation MRI platform, translating deep-tech research into manufacturable, product-ready systems while building and leading multidisciplinary teams.
 
-    More recently, at Chipiron, an early-stage deep-tech startup developing next-generation MRI systems, I led engineering and product definition for the company’s first in-vivo MRI platform. I worked directly with C-level leadership and researchers to translate experimental research into clear, manufacturable, and testable product requirements. This included building and leading a multidisciplinary team spanning electronics, RF, mechanics, software, and manufacturing, as well as driving system-level co-design across quantum sensing, cryogenics, and MRI subsystems.
+Across these experiences, I’ve remained motivated by the same challenge: turning advanced technology into reliable, usable products through strong systems thinking and alignment between research, engineering, and execution. Outside of work, I’m a lifelong learner with a strong interest in human behavior and team dynamics. I’m also a father, which has reshaped how I think about responsibility, impact, and the human dimension of technology.`
+  technicalHeading: "Technical contributions & experience highlights",
+  technicalHighlights: `Led product discovery and system definition for a novel MRI platform, bridging research prototypes and product-ready hardware in a deep-tech environment
 
-    Throughout my career, I’ve been motivated by the same problem: how to turn advanced technology into reliable, usable products. I care deeply about alignment — between research and engineering, hardware and software, product vision and execution — and I’ve learned that clarity, shared understanding, and good systems thinking matter as much as technical excellence.
+    - Built and scaled cross-functional engineering teams across electronics, mechanics, software, and manufacturing
 
-    Outside of work, I’m a lifelong learner with a strong interest in human behavior, neurodiversity, and team dynamics. I’m also a sports enthusiast and a cyclist. Most importantly, I am a father, which has profoundly shaped how I think about time, priorities, and the kind of impact I want my work to have — both professionally and personally.
-  `,
-    technicalHeading: "Technical contributions & experience highlights",
-    technicalHighlights: `
-    Led product discovery and system definition for a novel MRI platform, bridging research prototypes and product-ready hardware in a deep-tech environment
+    - Designed and validated complex embedded and hardware systems (PCBs up to 12 layers, embedded firmware in C, factory test infrastructure)
 
-    Built and scaled cross-functional engineering teams across electronics, mechanics, software, and manufacturing
+    - Defined EVT-stage requirements for new medical devices, aligning clinical, regulatory, and business constraints
 
-    Designed and validated complex embedded and hardware systems (PCBs up to 12 layers, embedded firmware in C, factory test infrastructure)
+    - Deployed factory-wide testing and validation systems used across multiple product generations and thousands of units
 
-    Defined EVT-stage requirements for new medical devices, aligning clinical, regulatory, and business constraints
-
-    Deployed factory-wide testing and validation systems used across multiple product generations and thousands of units
-
-    Background in embedded systems, power electronics, medical imaging, real-time acquisition, and hardware–software integration
-  `
+    - Background in embedded systems, power electronics, medical imaging, real-time acquisition, and hardware–software integration`
 };

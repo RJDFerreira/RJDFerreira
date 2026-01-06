@@ -4,36 +4,44 @@ import { homeContent } from './content';
 
 export default function Home() {
     return (
-        <main>
-            <section className="mb-8 flex flex-col-reverse md:flex-row md:items-start md:justify-between gap-8 md:gap-12">
-                <div className="flex-1 mt-4 md:mt-0">
+        <main className="flex flex-col gap-8 md:gap-10">
+            {/* HERO SECTION: Intro + Avatar */}
+            <section className="flex flex-col-reverse md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+                <div className="flex-1 flex flex-col gap-3">
                     <h1 className="sr-only">{homeContent.title}</h1>
-                    <p className="text-white leading-relaxed mb-6 font-medium text-lg">
+
+                    {/* Subtle Label */}
+                    <span className="block font-medium text-sm tracking-widest text-neutral-500 uppercase">
                         {homeContent.aboutHeading}
-                    </p>
-                    <p className="text-white leading-relaxed mb-6 text-lg">
+                    </span>
+
+                    {/* Primary Intro Text */}
+                    <p className="text-white text-lg leading-relaxed font-medium max-w-prose">
                         {homeContent.intro}
                     </p>
                 </div>
-                <div className="shrink-0 relative top-[-10px]">
+
+                <div className="shrink-0 relative">
                     <Avatar />
                 </div>
             </section>
 
-            <section className="mb-12">
-                <p className="text-white leading-relaxed whitespace-pre-line">
+            {/* FULL BIO */}
+            <section>
+                <div className="text-neutral-300 leading-relaxed whitespace-pre-line max-w-prose text-base">
                     {homeContent.fullBio}
-                </p>
+                </div>
             </section>
 
-            <section className="mb-12">
-                <h2 className="font-medium mb-4 text-sm uppercase tracking-wider text-muted">{homeContent.technicalHeading}</h2>
-                <p className="leading-relaxed mb-4 whitespace-pre-line">
+            {/* TECHNICAL HIGHLIGHTS */}
+            <section className="flex flex-col gap-3">
+                <h2 className="font-medium text-sm tracking-widest text-neutral-500 uppercase">
+                    {homeContent.technicalHeading}
+                </h2>
+                <div className="text-neutral-300 leading-relaxed whitespace-pre-line max-w-prose text-sm md:text-base">
                     {homeContent.technicalHighlights}
-                </p>
+                </div>
             </section>
-
-
         </main>
     );
 }
