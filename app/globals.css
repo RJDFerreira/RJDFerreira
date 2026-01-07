@@ -5,7 +5,7 @@
 :root {
   --background: #111111;
   --foreground: #ffffff;
-  --muted: #a1a1a1;
+  --muted: #d4d4d4; /* neutral-300 */
 }
 
 body {

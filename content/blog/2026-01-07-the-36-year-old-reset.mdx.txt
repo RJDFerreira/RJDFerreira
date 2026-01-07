@@ -1,5 +1,0 @@
----
-title: "Minimalism in Code"
-date: "2025-10-12"
-excerpt: "Exploring why less is often more when building sustainable software."
----
